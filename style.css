@@ -1,0 +1,324 @@
+/*#1A2238#9DAAF2#FF6A3D#F4DB7D*/
+/*-------------------------------Global Section---------------------------------*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+    height: auto;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content-wrap {
+    max-width: 800px;
+}
+
+.section {
+    margin: 0;
+    padding: 0.5rem;
+    max-width: 100%;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 28px;
+    margin: 35px 0;
+}
+
+h2 {
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    margin-top: 20px;
+    /* background-color: #BF5250; */
+}
+
+/*--------------------------------Navbar-Styles--------------------------------*/
+
+header {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #29323c;
+    background: linear-gradient(to top, #29323c, #485563);
+    border-radius: 10px;
+    height: 1vmin;
+    width: 100vw;
+    padding: 27px;
+}
+
+.logo-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.main-logo {
+    height: auto;
+    width: 100px;
+}
+
+.menu-list-items {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list-container {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 2vmin;
+    margin: 0;
+    padding: 5px;
+    width: min-content;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: azure;
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-link:hover {
+    cursor: pointer;
+    color: #C04000;
+    font-weight: bold;
+}
+
+.menu-contact-icon-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 5px;
+}
+
+/*----------------------------Company-Information-Section--------------------*/
+
+#info {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#info-card {
+    padding-top: 40px;
+    height: max-content;
+    display: flex;
+    color: azure;
+    justify-content: space-evenly;
+    background-color: #48c6ef;
+    background: linear-gradient(45deg, #48c6ef, #6f86d6)
+}
+
+#info-container {
+    height: 80%;
+    padding-top: 10px;
+    display: flex;
+    align-items: stretch;
+    margin: 100px;
+    height: max-content;
+}
+
+#guitar-boy-wrapper {
+    max-width: 30%;
+    width: auto;
+    margin: 1rem;
+    height: auto;
+}
+
+#boy-img {
+    width: 100%;
+}
+
+.info-text {
+    margin: 1rem;
+    font-size: 29px;
+    text-align: center;
+    display: block;
+    text-align: center;
+    padding: 5%;
+    height: fit-content;
+}
+
+/*----------------------------------Video Section-------------------------------*/
+#video-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #BF5250;
+    padding: 15px;
+}
+
+.video-contaienr {
+    margin: 50% 0;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    padding: 10%;
+}
+
+/*--------------------------Services-Section------------------------------------*/
+
+#services-container {
+    padding: 10%;
+    margin: 0 auto;
+    height: max-content;
+    width: 100%;
+    background-color: #48c6ef;
+    background: linear-gradient(-45deg, #48c6ef, #6f86d6)
+}
+
+#services h2 {
+    padding: 10px;
+    border-bottom: 2px solid;
+}
+
+.services-list {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    line-height: 40px;
+}
+
+.services-list-item {
+    margin: 1rem;
+    font-size: 29px;
+    padding: 0.2rem;
+}
+
+/*------------------------Products Section--------------------------------------*/
+.products {
+    background: #000 url(img/Loydra.png) no-repeat;
+    background-position: center;
+}
+
+#products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+    padding: 5% 3%;
+    overflow: auto;
+    /* background-color: #BF5250; */
+}
+
+.product-card-wrapper {
+    height: max-content;
+    width: max-content;
+    background-color: #151515;
+    margin: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 15px 10px -15px #111;
+}
+
+.img-wrapper {
+    height: max-content;
+    width: min-content;
+    margin: 0 auto;
+}
+
+.product-image {
+    width: 300px;
+    height: auto;
+}
+
+.product-options {
+    display: flex;
+    padding: 29px 49px;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px;
+}
+
+.product-option-element {
+    margin: 5px;
+    padding: 3px;
+}
+
+.product-options button {
+    padding: 9px 19px;
+    border-radius: 20px;
+    border: white solid 2px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.product-options button:hover {
+    background-color: #818589;
+}
+
+@media screen and (max-width: 960) {
+    #products {
+        flex-direction: column;
+    }
+}
+
+/*-----------------------------------Footer-Syles-------------------------------*/
+
+footer {
+    background-color: #29323c;
+    background: linear-gradient(to bottom, #29323c, #485563);
+    padding: 1%;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 6vmin;
+    padding: 10%;
+}
+
+.contact-icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 10px;
+    height: auto;
+    margin: 9px;
+    padding: 5px;
+}
+
+#twitter #github #linkedin #instagram {
+    padding: 5px;
+}
+
+footer a img {
+    width: 3rem;
+    height: 3rem;
+    background-color: blanchedalmond;
+}
+
+footer a img:hover {
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
